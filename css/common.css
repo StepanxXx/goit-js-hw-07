@@ -1,3 +1,5 @@
+/* #region Common */
+
 * {
   box-sizing: border-box;
 }
@@ -12,3 +14,271 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
+a {
+  text-decoration: none;
+  font-size: inherit;
+}
+
+ul,
+ol {
+  font-size: inherit;
+  font-family: inherit;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+button {
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+/* #endregion */
+
+
+/* #region base */
+
+input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 7px 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+input:hover {
+  border-color: #000;
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background-color: #4e75ff;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #6c8cff;
+}
+
+
+/* #endregion */
+
+/* #region categories */
+#categories {
+  padding: 24px;
+}
+
+#categories .item {
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+  background-color: #f6f6fe;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+#categories .item:last-child {
+  margin-bottom: 0;
+}
+
+#categories .item h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+#categories .item ul li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 7px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+#categories .item ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* #endregion */
+
+/* #region gallery */
+
+.gallery {
+  max-width: 1128px;
+  margin: 100px auto 0;
+  display: flex;
+  gap: 48px 24px;
+  flex-wrap: wrap;
+}
+
+
+/* #endregion */
+
+
+/* #region hello name*/
+
+#name-input {
+  margin-left: 24px;
+  margin-bottom: 16px;
+  margin-top: 24px;
+  width: 360px;
+}
+
+#name-input + h1 {
+  margin-left: 24px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/* #endregion */
+
+/* #region login form*/
+
+.login-form {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px;
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  background-color: #fff;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 8px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+
+.login-form label:nth-child(2) {
+  margin-bottom: 16px;
+}
+
+/* #endregion */
+
+/* #region widget */
+.widget {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+
+  border-radius: 8px;
+  width: 345px;
+  height: 280px;
+
+  background-color: #fff;
+}
+/* #endregion */
+
+/* #region controls */
+#controls, #boxes {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  background-color: #f6f6fe;
+  margin-bottom: 16px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#boxes {
+  padding-right: 28px;
+  justify-content: center;
+  gap: 24px 44px;
+}
+
+#controls input {
+  width: 150px;
+  background-color: transparent;
+  text-align: center;
+}
+
+#controls button {
+  width: 120px;
+}
+
+#controls button[data-destroy] {
+  background-color: #ff4e4e;
+}
+
+#controls button[data-destroy]:hover {
+  background-color: #ff7070;
+}
+/* #endregion */
